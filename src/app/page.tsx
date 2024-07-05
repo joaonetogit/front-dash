@@ -1,7 +1,11 @@
+import Sidebar from '@/components/custom/Sidebar';
+import HomePage from '@/pages/Home';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="flex">
+      <Sidebar />
+      <HomePage />
     </div>
   );
 }
