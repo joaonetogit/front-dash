@@ -1,3 +1,4 @@
+import Providers from '@/context/Providers';
 import { IChildren } from '@/types/base';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -19,7 +20,9 @@ export default function RootLayout({ children }: Readonly<IChildren>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable}`}>
-        <main>{children}</main>
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Logo from './Logo';
 import NavListSidebarDropdown from './NavListSidebar';
 import SearchInput from './SearchInput';
+import User from './User';
 
 export default function Sidebar() {
   return (
@@ -8,6 +9,7 @@ export default function Sidebar() {
       <Logo />
       <SearchInput />
       <NavListSidebarDropdown />
+      <User />
     </div>
   );
 }
