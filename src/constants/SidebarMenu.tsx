@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils';
 import { ISidebarMenu } from '@/types/constants/SidebarMenu';
 import {
   Bars3BottomRightIcon,
@@ -9,13 +8,11 @@ import {
   UsersIcon,
 } from '@heroicons/react/24/outline';
 
-const classesIcon = 'text-iconSidebar w-iconSidebar h-iconSidebar';
-
 const SidebarMenu: ISidebarMenu[] = [
   {
     id: 1,
     title: 'Home',
-    icon: <HomeIcon className={classesIcon} />,
+    icon: <HomeIcon />,
     link: '/dashboard',
     subMenu: [
       {
@@ -31,7 +28,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 2,
     title: 'Dashboard',
-    icon: <Bars3BottomRightIcon className={cn(classesIcon, 'rotate-90')} />,
+    icon: <Bars3BottomRightIcon className="rotate-90" />,
     link: '/users',
     subMenu: [
       {
@@ -47,7 +44,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 3,
     title: 'Projects',
-    icon: <DocumentDuplicateIcon className={classesIcon} />,
+    icon: <DocumentDuplicateIcon />,
     link: '/settings',
     subMenu: [
       {
@@ -63,7 +60,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 4,
     title: 'Tasks',
-    icon: <CheckBadgeIcon className={classesIcon} />,
+    icon: <CheckBadgeIcon />,
     link: '/logout',
     subMenu: [
       {
@@ -79,7 +76,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 5,
     title: 'Reporting',
-    icon: <FlagIcon className={classesIcon} />,
+    icon: <FlagIcon />,
     link: '/logout',
     subMenu: [
       {
@@ -95,7 +92,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 6,
     title: 'Users',
-    icon: <UsersIcon className={classesIcon} />,
+    icon: <UsersIcon />,
     link: '/logout',
     subMenu: [
       {

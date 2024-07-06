@@ -1,14 +1,15 @@
 import { ReactElement } from 'react';
 
-interface ISidebarSubmenu {
+interface ISidebarButton {
   title: string;
   link: string;
+  icon: ReactElement;
 }
 
-export interface ISidebarMenu {
+export interface ISidebarMenu extends ISidebarButton {
   id: number;
-  title: string;
-  icon: ReactElement;
   link: string;
-  subMenu?: ISidebarSubmenu[];
+  subMenu?: ISidebarButton[];
 }
+
+export interface ISidebarButtonsConfigs extends ISidebarButton {}

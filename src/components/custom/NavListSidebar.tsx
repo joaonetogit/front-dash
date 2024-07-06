@@ -14,7 +14,7 @@ export default function NavListSidebarDropdown() {
               classNameIcon="group-hover:text-[#B692F6]"
             >
               <div className="flex items-center gap-3">
-                {menu.icon}
+                <div className="h-iconSidebar w-iconSidebar text-iconSidebar">{menu.icon}</div>
                 <p className="text-base font-medium transition-all group-hover:text-[#6941C6]">
                   {menu.title}
                 </p>
