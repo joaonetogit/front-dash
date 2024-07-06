@@ -6,16 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 export default function NavListSidebarDropdown() {
   return (
     <nav className="flex flex-col gap-1">
-      {SidebarMenu.map((menu: ISidebarMenu) => (
-        <Accordion
-          key={menu.id}
-          type="single"
-          collapsible
-          className="ease flex w-full items-center justify-between rounded-md"
-        >
-          <AccordionItem value={`item-${menu.id}`} className="w-full border-none">
+      <Accordion type="single" collapsible className="w-full">
+        {SidebarMenu.map((menu: ISidebarMenu) => (
+          <AccordionItem key={menu.id} value={`item-${menu.id}`} className="w-full border-none">
             <AccordionTrigger
-              className="group flex cursor-pointer items-center justify-between px-3 py-2 transition-all hover:bg-[#F9F5FF] hover:no-underline"
+              className="group flex cursor-pointer items-center justify-between rounded-md px-3 py-2 transition-all hover:bg-[#F9F5FF] hover:no-underline"
               classNameIcon="group-hover:text-[#B692F6]"
             >
               <div className="flex items-center gap-3">
@@ -39,8 +34,8 @@ export default function NavListSidebarDropdown() {
               </AccordionContent>
             )}
           </AccordionItem>
-        </Accordion>
-      ))}
+        ))}
+      </Accordion>
     </nav>
   );
 }
