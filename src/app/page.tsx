@@ -3,9 +3,9 @@ import HomePage from '@/pages/Home';
 
 export default function Home() {
   return (
-    <div className="flex">
+    <main className="flex">
       <Sidebar />
       <HomePage />
-    </div>
+    </main>
   );
 }
