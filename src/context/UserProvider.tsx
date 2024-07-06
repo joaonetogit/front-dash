@@ -1,23 +1,20 @@
 'use client';
 
-import { IUser } from '@/types/base';
-import { createContext, ReactNode, useCallback, useContext, useMemo, useState } from 'react';
+import { IChildren, IUser } from '@/types/base';
+import { IUserContextProps } from '@/types/context/User';
+import { createContext, useCallback, useContext, useMemo, useState } from 'react';
 
-interface UserContextProps {
-  user: IUser | null;
-  handleLogout: () => void;
-}
-
-const UserContext = createContext<UserContextProps>({
+const UserContext = createContext<IUserContextProps>({
   user: null,
   handleLogout: () => {},
 });
 
-export function UserProvider({ children }: { children: ReactNode }) {
+export function UserProvider({ children }: IChildren) {
   const [user, setUser] = useState<IUser | null>({
     image: 'https://mui.com/static/images/avatar/3.jpg',
     name: 'Olivia Rhye',
     email: 'olivia@untitledui.com',
+    percentStorageUsed: 80,
   });
 
   const handleLogout = useCallback(() => {
@@ -29,4 +26,4 @@ export function UserProvider({ children }: { children: ReactNode }) {
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 }
 
-export const useUserContext = (): UserContextProps => useContext(UserContext);
+export const useUserContext = (): IUserContextProps => useContext(UserContext);

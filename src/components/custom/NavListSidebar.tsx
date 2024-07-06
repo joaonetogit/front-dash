@@ -14,7 +14,10 @@ export default function NavListSidebarDropdown() {
           className="ease flex w-full items-center justify-between rounded-md"
         >
           <AccordionItem value={`item-${menu.id}`} className="w-full border-none">
-            <AccordionTrigger className="group flex cursor-pointer items-center justify-between px-3 py-2 transition-all hover:bg-[#F9F5FF] hover:no-underline">
+            <AccordionTrigger
+              className="group flex cursor-pointer items-center justify-between px-3 py-2 transition-all hover:bg-[#F9F5FF] hover:no-underline"
+              classNameIcon="group-hover:text-[#B692F6]"
+            >
               <div className="flex items-center gap-3">
                 {menu.icon}
                 <p className="text-base font-medium transition-all group-hover:text-[#6941C6]">
