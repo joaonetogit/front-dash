@@ -12,6 +12,6 @@ const ButtonsForSidebarButtonsConfigs: ISidebarButtonsConfigs[] = [
     icon: <Cog8ToothIcon />,
     link: '/settings',
   },
-];
+] as const;
 
 export default ButtonsForSidebarButtonsConfigs;

@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 interface ISidebarButton {
   title: string;
   link: string;
-  icon: ReactElement;
+  icon?: ReactElement;
 }
 
 export interface ISidebarMenu extends ISidebarButton {

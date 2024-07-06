@@ -105,6 +105,6 @@ const SidebarMenu: ISidebarMenu[] = [
       },
     ],
   },
-];
+] as const;
 
 export default SidebarMenu;
