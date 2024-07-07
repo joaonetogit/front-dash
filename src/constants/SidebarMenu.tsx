@@ -26,7 +26,7 @@ const SidebarMenu: ISidebarMenu[] = [
   {
     id: 2,
     title: 'Dashboard',
-    icon: <Bars3BottomRightIcon className="rotate-90" />,
+    icon: <Bars3BottomRightIcon className='rotate-90' />,
     link: '/users',
     subMenu: [
       {

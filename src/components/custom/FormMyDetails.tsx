@@ -10,7 +10,7 @@ import UploadPhoto from './FormSections/UploadPhoto';
 
 export default function FormMyDetails() {
   return (
-    <form action="">
+    <form action=''>
       <NameText />
       <EmailText />
       <UploadPhoto />
@@ -19,9 +19,9 @@ export default function FormMyDetails() {
       <SelectTimezone />
       <BioText />
       <PortfolioProjects />
-      <div className="flex justify-end gap-3 pt-4">
-        <Button variant="outline">Cancel</Button>
-        <Button variant="primary">Save</Button>
+      <div className='flex justify-end gap-3 pt-4'>
+        <Button variant='outline'>Cancel</Button>
+        <Button variant='primary'>Save</Button>
       </div>
     </form>
   );

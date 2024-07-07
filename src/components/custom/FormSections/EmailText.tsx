@@ -4,12 +4,12 @@ import FormRowContent from '../FormRowContent';
 
 export default function EmailText() {
   return (
-    <FormRowContent title="Email address">
+    <FormRowContent title='Email address'>
       <Input
-        type="email"
-        id="email"
-        placeholder="Your best e-mail"
-        icon={<EnvelopeIcon className="size-4 text-zinc-700" />}
+        type='email'
+        id='email'
+        placeholder='Your best e-mail'
+        icon={<EnvelopeIcon className='size-4 text-zinc-700' />}
       />
     </FormRowContent>
   );

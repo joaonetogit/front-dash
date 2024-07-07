@@ -9,9 +9,9 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, icon, ...props }, ref) => {
     return (
-      <div className="relative flex">
+      <div className='relative flex'>
         {icon && (
-          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-[16.5px]">
+          <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-[16.5px]'>
             {icon}
           </div>
         )}

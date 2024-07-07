@@ -3,7 +3,7 @@ import HomePage from '@/pages/Home';
 
 export default function Home() {
   return (
-    <main className="flex">
+    <main className='flex'>
       <Sidebar />
       <HomePage />
     </main>
