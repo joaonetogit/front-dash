@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/Tabs';
 export default function TabsOnSettings() {
   return (
     <Tabs defaultValue={DataTabsList[0].text} className="w-full">
-      <TabsList className="relative border-b border-border p-0">
+      <TabsList className="relative p-0">
         <div className="flex gap-4">
           {DataTabsList.map((tab) => (
             <TabsTrigger key={tab.text} value={tab.text}>
@@ -19,8 +19,8 @@ export default function TabsOnSettings() {
         </div>
       </TabsList>
       {DataTabsList.map((tab) => (
-        <TabsContent key={tab.text} value={tab.text}>
-          {tab.component}
+        <TabsContent key={tab.text} value={tab.text} className="m-0">
+          <div className="border-t border-border pt-8">{tab.component}</div>
         </TabsContent>
       ))}
     </Tabs>

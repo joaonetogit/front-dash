@@ -1,10 +1,10 @@
-import FormMyDetails from '@/components/custom/FormMyDetails';
+import MyDetailsContent from '@/components/custom/MyDetailsContent';
 import { ITabsList } from '@/types/constants/TabsList';
 
 const DataTabsList: ITabsList[] = [
   {
     text: 'My details',
-    component: <FormMyDetails />,
+    component: <MyDetailsContent />,
   },
   {
     text: 'Profile',

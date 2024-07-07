@@ -22,6 +22,7 @@ const config = {
         sidebar: '311px',
       },
       boxShadow: {
+        button: 'box-shadow: 0px 1px 2px 0px #1018280D;',
         logo: 'box-shadow: 0px 1px 2px 0px #1018280F;',
         searchInput: 'box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);',
       },
