@@ -1,6 +1,5 @@
 import SidebarMenu from '@/constants/SidebarMenu';
 import { ISidebarMenu } from '@/types/constants/SidebarMenu';
-import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/Accordion';
 
 export default function NavListSidebarDropdown() {
@@ -23,13 +22,13 @@ export default function NavListSidebarDropdown() {
             {menu.subMenu && (
               <AccordionContent className="px-3 py-2">
                 {menu.subMenu.map((subMenu) => (
-                  <Link
+                  <button
+                    type="button"
                     key={subMenu.title}
-                    href={subMenu.link}
                     className="block px-2 py-1 text-sm text-gray-500 transition-all hover:text-gray-700"
                   >
                     {subMenu.title}
-                  </Link>
+                  </button>
                 ))}
               </AccordionContent>
             )}

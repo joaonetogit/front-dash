@@ -17,11 +17,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Home',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },
@@ -33,11 +31,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Dashboard',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },
@@ -49,11 +45,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Projects',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },
@@ -65,11 +59,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Tasks',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },
@@ -81,11 +73,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Reporting',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },
@@ -97,11 +87,9 @@ const SidebarMenu: ISidebarMenu[] = [
     subMenu: [
       {
         title: 'Submenu Users',
-        link: '/dashboard/submenu-1',
       },
       {
         title: 'Submenu 2',
-        link: '/dashboard/submenu-2',
       },
     ],
   },

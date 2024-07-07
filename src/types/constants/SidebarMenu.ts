@@ -3,13 +3,13 @@ import { ReactElement } from 'react';
 interface ISidebarButton {
   title: string;
   link: string;
-  icon?: ReactElement;
+  icon: ReactElement;
 }
 
 export interface ISidebarMenu extends ISidebarButton {
   id: number;
   link: string;
-  subMenu?: ISidebarButton[];
+  subMenu?: { title: string }[];
 }
 
 export interface ISidebarButtonsConfigs extends ISidebarButton {}

@@ -5,7 +5,7 @@ import { ArrowRightStartOnRectangleIcon } from '@heroicons/react/24/solid';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/Avatar';
 
 export default function User() {
-  const { user, handleLogout } = useUserContext();
+  const { user } = useUserContext();
 
   return (
     <div className="flex items-start justify-between">
@@ -20,7 +20,7 @@ export default function User() {
         </div>
       </div>
 
-      <button type="button" onClick={handleLogout} aria-label="Exit">
+      <button type="button" aria-label="Exit">
         <ArrowRightStartOnRectangleIcon className="size-5 text-zinc-500" />
       </button>
     </div>
