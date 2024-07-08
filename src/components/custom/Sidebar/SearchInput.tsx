@@ -1,5 +1,5 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
-import { Input } from '../ui/Input';
+import { Input } from '../../ui/Input';
 
 export default function SearchInput() {
   return (

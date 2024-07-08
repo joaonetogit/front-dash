@@ -6,6 +6,6 @@ const timezones = [
   { name: 'Central Standard Time', utc: 'UTC-06:00' },
   { name: 'Mountain Standard Time', utc: 'UTC-07:00' },
   { name: 'Pacific Standard Time', utc: 'UTC-08:00' },
-];
+] as const;
 
 export default timezones;

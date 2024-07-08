@@ -7,6 +7,6 @@ const countries = [
   { flag: '🇨🇴', name: 'Colombia', value: 'colombia' },
   { flag: '🇲🇽', name: 'Mexico', value: 'mexico' },
   { flag: '🇵🇪', name: 'Peru', value: 'peru' },
-];
+] as const;
 
 export default countries;

@@ -1,5 +1,5 @@
-import { Button } from '../ui/Button';
-import { Separator } from '../ui/Separator';
+import { Button } from '../../ui/Button';
+import { Separator } from '../../ui/Separator';
 
 export default function MyDetailsHeader() {
   return (

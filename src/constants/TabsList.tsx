@@ -1,4 +1,4 @@
-import MyDetailsContent from '@/components/custom/MyDetailsContent';
+import MyDetailsContent from '@/components/custom/MyDetails/MyDetailsContent';
 import { ITabsList } from '@/types/constants/TabsList';
 
 const DataTabsList: ITabsList[] = [

@@ -1,8 +1,8 @@
 import SidebarMenu from '@/constants/SidebarMenu';
 import { ISidebarMenu } from '@/types/constants/SidebarMenu';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/Accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../ui/Accordion';
 
-export default function NavListSidebarDropdown() {
+export default function SidebarNavListAccordion() {
   return (
     <nav className='flex flex-col gap-1'>
       <Accordion

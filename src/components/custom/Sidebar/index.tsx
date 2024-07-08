@@ -1,11 +1,11 @@
-import { Separator } from '../ui/Separator';
-import Logo from './Logo';
-import NavListSidebarDropdown from './NavListSidebar';
+import { Separator } from '../../ui/Separator';
+import Logo from '../Logo';
+import UsedSpace from '../UsedSpace';
+import User from '../User';
 import SearchInput from './SearchInput';
 import SidebarButtonsConfigs from './SidebarButtonsConfigs';
 import SidebarContent from './SidebarContent';
-import UsedSpace from './UsedSpace';
-import User from './User';
+import SidebarNavListAccordion from './SidebarNavList';
 
 export default function Sidebar() {
   return (
@@ -13,7 +13,7 @@ export default function Sidebar() {
       <SidebarContent>
         <Logo />
         <SearchInput />
-        <NavListSidebarDropdown />
+        <SidebarNavListAccordion />
       </SidebarContent>
       <SidebarContent>
         <SidebarButtonsConfigs />
