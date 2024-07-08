@@ -5,6 +5,7 @@ import timezones from '@/constants/Timezones';
 import DataToogleBioText from '@/constants/ToogleBioText';
 import { ClockIcon, EnvelopeIcon, UserIcon } from '@heroicons/react/24/outline';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '../ui/Button';
@@ -16,6 +17,7 @@ import { ToggleGroup, ToggleGroupItem } from '../ui/ToggleGroup';
 import DragDropFiles from './DragDropFiles';
 import FormRowContent from './FormRowContent';
 
+const MAX_CHAR_COUNT = 275;
 const formSchema = z.object({
   firstName: z.string().min(2),
   lastName: z.string().min(2),
@@ -27,6 +29,7 @@ const formSchema = z.object({
 });
 
 export default function FormMyDetails() {
+  const [charCount, setCharCount] = useState(MAX_CHAR_COUNT);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,6 +43,12 @@ export default function FormMyDetails() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
   }
+
+  const handleTextareaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const remainingChars = MAX_CHAR_COUNT - event.target.value.length;
+    setCharCount(remainingChars);
+    form.control.register('bio').onChange(event);
+  };
 
   return (
     <Form {...form}>
@@ -254,9 +263,15 @@ export default function FormMyDetails() {
                       id='message'
                       className='resize-none'
                       rows={6}
+                      maxLength={MAX_CHAR_COUNT}
                       {...field}
+                      onChange={handleTextareaChange}
                     />
-                    <p className='text-sm text-muted-foreground'>275 characters left</p>
+                    <p className='text-sm text-muted-foreground'>
+                      {charCount <= 0
+                        ? "You've reached the character limit"
+                        : `${charCount} characters left`}
+                    </p>
                   </div>
                 </div>
               </FormItem>
