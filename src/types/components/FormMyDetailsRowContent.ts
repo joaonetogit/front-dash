@@ -1,6 +1,6 @@
 import { IChildren } from '../base';
 
-export interface IFormRowContent extends IChildren {
+export interface IFormMyDetailsRowContent extends IChildren {
   title: string;
   supportText?: string;
 }

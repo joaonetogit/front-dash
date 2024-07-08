@@ -1,10 +1,10 @@
 import { FormField, FormItem } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
-import FormRowContent from '../FormRowContent';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function NameSection({ form }: any) {
   return (
-    <FormRowContent title='Name'>
+    <FormMyDetailsRowContent title='Name'>
       <div className='flex w-full items-center gap-4'>
         <FormField
           control={form.control}
@@ -35,6 +35,6 @@ export default function NameSection({ form }: any) {
           )}
         />
       </div>
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

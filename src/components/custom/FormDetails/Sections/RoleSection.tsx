@@ -1,10 +1,10 @@
 import { FormField, FormItem } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
-import FormRowContent from '../FormRowContent';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function RoleSection({ form }: any) {
   return (
-    <FormRowContent title='Role'>
+    <FormMyDetailsRowContent title='Role'>
       <FormField
         control={form.control}
         name='role'
@@ -19,6 +19,6 @@ export default function RoleSection({ form }: any) {
           </FormItem>
         )}
       />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

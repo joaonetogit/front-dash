@@ -1,17 +1,17 @@
 import { FormControl, FormField, FormItem } from '@/components/ui/Form';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '@/components/ui/Select';
 import countries from '@/constants/Countries';
-import FormRowContent from '../FormRowContent';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function CountrySection({ form }: any) {
   return (
-    <FormRowContent title='Country'>
+    <FormMyDetailsRowContent title='Country'>
       <FormField
         control={form.control}
         name='country'
@@ -43,6 +43,6 @@ export default function CountrySection({ form }: any) {
           </FormItem>
         )}
       />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

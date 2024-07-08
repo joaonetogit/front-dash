@@ -1,11 +1,11 @@
 import { FormField, FormItem } from '@/components/ui/Form';
 import { UserIcon } from '@heroicons/react/24/outline';
-import DragDropFiles from '../DragDropFiles';
-import FormRowContent from '../FormRowContent';
+import DragDropFiles from '../../DragDropFiles';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function PhotoSection({ form }: any) {
   return (
-    <FormRowContent
+    <FormMyDetailsRowContent
       title='Your photo'
       supportText='This will be displayed on your profile.'
     >
@@ -21,6 +21,6 @@ export default function PhotoSection({ form }: any) {
           </FormItem>
         )}
       />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

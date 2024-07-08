@@ -2,17 +2,17 @@
 
 import { FormField, FormItem } from '@/components/ui/Form';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '@/components/ui/Select';
 import { Textarea } from '@/components/ui/Textarea';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/ToggleGroup';
 import DataToogleBioText from '@/constants/ToogleBioText';
 import { useState } from 'react';
-import FormRowContent from '../FormRowContent';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 const MAX_CHAR_COUNT = 275;
 
@@ -25,7 +25,7 @@ export default function BioSection({ form }: any) {
   };
 
   return (
-    <FormRowContent
+    <FormMyDetailsRowContent
       title='Bio'
       supportText='Write a short introduction.'
     >
@@ -83,6 +83,6 @@ export default function BioSection({ form }: any) {
           </FormItem>
         )}
       />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

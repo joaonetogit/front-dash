@@ -1,6 +1,10 @@
-import { IFormRowContent } from '@/types/components/FormRowContent';
+import { IFormMyDetailsRowContent } from '@/types/components/FormMyDetailsRowContent';
 
-export default function FormRowContent({ title, supportText, children }: IFormRowContent) {
+export default function FormMyDetailsRowContent({
+  title,
+  supportText,
+  children,
+}: IFormMyDetailsRowContent) {
   return (
     <div className='!mt-0 w-full border-b border-border py-5'>
       <div className='flex max-w-[824px] justify-between gap-8'>

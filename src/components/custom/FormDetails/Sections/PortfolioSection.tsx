@@ -1,13 +1,13 @@
-import DragDropFiles from '../DragDropFiles';
-import FormRowContent from '../FormRowContent';
+import DragDropFiles from '../../DragDropFiles';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function PortfolioSection() {
   return (
-    <FormRowContent
+    <FormMyDetailsRowContent
       title='Portfolio projects'
       supportText='Share a few snippets of your work.'
     >
       <DragDropFiles />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

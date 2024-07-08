@@ -1,10 +1,47 @@
-import { CloudArrowUpIcon } from '@heroicons/react/24/outline';
+import { IFeaturedIcon } from '@/types/components/FeaturedIcon';
+import { cva } from 'class-variance-authority';
 
-export default function FeaturedIcon() {
+const iconStyles = cva('flex items-center justify-center rounded-full border-[6px]', {
+  variants: {
+    variant: {
+      default: 'border-[#F9FAFB] h-10 w-10',
+      primary: 'border-[#E5E7EB] h-10 w-10',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
+
+const innerDivStyles = cva('flex h-full w-full items-center justify-center rounded-full', {
+  variants: {
+    variant: {
+      default: 'bg-[#F2F4F7]',
+      primary: 'bg-[#3B82F6]',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
+
+const iconVariantStyles = cva('', {
+  variants: {
+    variant: {
+      default: 'text-[#6B7280] size-5 stroke-[1.67px]',
+      primary: 'text-white size-4',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
+
+export default function FeaturedIcon({ variant = 'default', icon }: IFeaturedIcon) {
   return (
-    <div className='flex h-10 w-10 items-center justify-center rounded-full border-[6px] border-[#F9FAFB]'>
-      <div className='flex h-full w-full items-center justify-center rounded-full bg-[#F2F4F7]'>
-        <CloudArrowUpIcon className='size-5 text-[#475467]' />
+    <div className={iconStyles({ variant })}>
+      <div className={innerDivStyles({ variant })}>
+        <div className={iconVariantStyles({ variant })}>{icon}</div>
       </div>
     </div>
   );

@@ -2,18 +2,18 @@ import { FormControl, FormField, FormItem } from '@/components/ui/Form';
 import timezones from '@/constants/Timezones';
 
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '@/components/ui/Select';
 import { ClockIcon } from '@radix-ui/react-icons';
-import FormRowContent from '../FormRowContent';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function TimezoneSection({ form }: any) {
   return (
-    <FormRowContent title='Timezone'>
+    <FormMyDetailsRowContent title='Timezone'>
       <FormField
         control={form.control}
         name='timezone'
@@ -50,6 +50,6 @@ export default function TimezoneSection({ form }: any) {
           </FormItem>
         )}
       />
-    </FormRowContent>
+    </FormMyDetailsRowContent>
   );
 }

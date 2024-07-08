@@ -1,7 +1,7 @@
 import { Button } from '../../ui/Button';
 import { Separator } from '../../ui/Separator';
 
-export default function MyDetailsHeader() {
+export default function FormMyDetailsHeader() {
   return (
     <div>
       <div className='flex items-center justify-between'>
@@ -11,7 +11,12 @@ export default function MyDetailsHeader() {
         </div>
         <div className='space-x-3'>
           <Button variant='outline'>Cancel</Button>
-          <Button variant='primary'>Save</Button>
+          <Button
+            type='submit'
+            variant='primary'
+          >
+            Save
+          </Button>
         </div>
       </div>
       <Separator className='mt-5' />
