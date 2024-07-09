@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 
 export default function SidebarNavListAccordion() {
   return (
-    <nav className='flex flex-col gap-1'>
+    <nav className='hidden flex-col gap-1 sm:flex'>
       <Accordion
         type='single'
         collapsible

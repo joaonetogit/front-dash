@@ -8,3 +8,7 @@ export interface IUser {
   email: string;
   percentStorageUsed: number;
 }
+
+export interface IClassName {
+  className?: string;
+}

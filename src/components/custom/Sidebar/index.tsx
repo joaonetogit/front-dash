@@ -9,7 +9,7 @@ import SidebarNavListAccordion from './SidebarNavList';
 
 export default function Sidebar() {
   return (
-    <aside className='flex min-h-screen max-w-sidebar flex-1 flex-col justify-between gap-6 border-r-[1px] border-border px-6 py-8'>
+    <aside className='hidden min-h-screen max-w-sidebar flex-1 flex-col justify-between gap-6 border-r-[1px] border-border px-6 py-8 sm:flex'>
       <SidebarContent>
         <Logo />
         <SearchInput />

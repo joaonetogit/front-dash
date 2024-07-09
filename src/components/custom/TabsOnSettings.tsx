@@ -5,7 +5,7 @@ export default function TabsOnSettings() {
   return (
     <Tabs
       defaultValue={DataTabsList[0].text}
-      className='w-full'
+      className='hidden sm:block sm:w-full'
     >
       <TabsList className='relative p-0'>
         <div className='flex gap-4'>
