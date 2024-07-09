@@ -53,33 +53,46 @@ export default function FormMyDetails() {
   }, []);
 
   return (
-    <>
-      <FormMyDetailsHeader />
-      <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className='space-y-8'
-        >
-          <RenderNameSection form={form} />
-          <RenderEmailSection form={form} />
-          <RenderPhotoSection form={form} />
-          <RenderRoleSection form={form} />
-          <RenderCountrySection form={form} />
-          <RenderTimezoneSection form={form} />
-          <RenderBioSection form={form} />
-          <RenderPortfolioSection />
-
-          <div className='flex justify-end gap-3 pt-4'>
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className='space-y-8'
+      >
+        <FormMyDetailsHeader>
+          <div className='space-x-3'>
             <Button variant='outline'>Cancel</Button>
             <Button
               type='submit'
+              name='action'
+              value='save'
               variant='primary'
             >
               Save
             </Button>
           </div>
-        </form>
-      </Form>
-    </>
+        </FormMyDetailsHeader>
+
+        <RenderNameSection form={form} />
+        <RenderEmailSection form={form} />
+        <RenderPhotoSection form={form} />
+        <RenderRoleSection form={form} />
+        <RenderCountrySection form={form} />
+        <RenderTimezoneSection form={form} />
+        <RenderBioSection form={form} />
+        <RenderPortfolioSection />
+
+        <div className='flex justify-end gap-3 pt-4'>
+          <Button variant='outline'>Cancel</Button>
+          <Button
+            type='submit'
+            name='action'
+            value='submit-and-next'
+            variant='primary'
+          >
+            Save
+          </Button>
+        </div>
+      </form>
+    </Form>
   );
 }

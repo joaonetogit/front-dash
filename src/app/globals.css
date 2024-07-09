@@ -75,18 +75,7 @@
   }
 }
 
-*::before,
-*::after {
-  pointer-events: none;
-}
-
-html,
 body {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
