@@ -1,4 +1,6 @@
-const timezones = [
+import { ITimezone } from '@/types/constants/Timezones';
+
+const timezones: ITimezone[] = [
   { name: 'Greenwich Mean Time', utc: 'UTC+00:00' },
   { name: 'Central European Time', utc: 'UTC+01:00' },
   { name: 'Eastern European Time', utc: 'UTC+02:00' },

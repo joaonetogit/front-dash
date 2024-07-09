@@ -5,7 +5,7 @@ const iconStyles = cva('flex items-center justify-center rounded-full border-[6p
   variants: {
     variant: {
       default: 'border-[#F9FAFB] h-10 w-10',
-      primary: 'border-[#E5E7EB] h-10 w-10',
+      primary: 'border-[#F5F3FF] h-10 w-10',
     },
   },
   defaultVariants: {
@@ -17,7 +17,7 @@ const innerDivStyles = cva('flex h-full w-full items-center justify-center round
   variants: {
     variant: {
       default: 'bg-[#F2F4F7]',
-      primary: 'bg-[#3B82F6]',
+      primary: 'bg-[#EDE9FE]',
     },
   },
   defaultVariants: {
@@ -29,7 +29,7 @@ const iconVariantStyles = cva('', {
   variants: {
     variant: {
       default: 'text-[#6B7280] size-5 stroke-[1.67px]',
-      primary: 'text-white size-4',
+      primary: 'text-violet-600 size-4 stroke-[1.33px]',
     },
   },
   defaultVariants: {

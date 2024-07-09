@@ -1,10 +1,10 @@
 import { FormControl, FormField, FormItem } from '@/components/ui/Form';
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from '@/components/ui/Select';
 import countries from '@/constants/Countries';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
@@ -23,7 +23,7 @@ export default function CountrySection({ form }: any) {
             >
               <FormControl>
                 <SelectTrigger className='w-full'>
-                  <SelectValue placeholder='Country' />
+                  <SelectValue placeholder={`${countries[0].flag} ${countries[0].name}`} />
                 </SelectTrigger>
               </FormControl>
               <SelectContent>

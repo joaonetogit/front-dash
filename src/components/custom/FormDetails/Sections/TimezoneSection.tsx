@@ -2,13 +2,14 @@ import { FormControl, FormField, FormItem } from '@/components/ui/Form';
 import timezones from '@/constants/Timezones';
 
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from '@/components/ui/Select';
 import { ClockIcon } from '@radix-ui/react-icons';
+import SelectedValue from '../../SelectedValue';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function TimezoneSection({ form }: any) {
@@ -29,7 +30,7 @@ export default function TimezoneSection({ form }: any) {
                   icon={<ClockIcon className='size-4 text-[#71717A]' />}
                 >
                   <SelectValue
-                    placeholder='Timezone'
+                    placeholder={<SelectedValue archive={timezones[0]} />}
                     className='text-left'
                   />
                 </SelectTrigger>
@@ -41,8 +42,7 @@ export default function TimezoneSection({ form }: any) {
                     key={timezone.utc}
                     value={timezone.utc}
                   >
-                    <span className='mr-2 font-medium text-zinc-900'>{timezone.name}</span>
-                    <span className='text-muted-foreground'>{timezone.utc}</span>
+                    <SelectedValue archive={timezone} />
                   </SelectItem>
                 ))}
               </SelectContent>

@@ -1,4 +1,6 @@
-const countries = [
+import { ICountries } from '@/types/constants/Countries';
+
+const countries: ICountries[] = [
   { flag: '🇧🇷', name: 'Brazil', value: 'brazil' },
   { flag: '🇺🇸', name: 'United States', value: 'usa' },
   { flag: '🇨🇦', name: 'Canada', value: 'canada' },
