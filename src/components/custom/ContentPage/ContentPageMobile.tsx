@@ -9,13 +9,13 @@ import {
   SelectValue,
 } from '@/components/ui/Select';
 import DataTabsList from '@/constants/TabsList';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function ContentPageMobile() {
   const [selectedValue, setSelectedValue] = useState(DataTabsList[0].text);
 
   return (
-    <div className='block sm:hidden'>
+    <div className='mt-8 block space-y-8 sm:hidden'>
       <Select onValueChange={value => setSelectedValue(value)}>
         <SelectTrigger className='w-full'>
           <SelectValue placeholder={DataTabsList[0].text} />
@@ -34,12 +34,12 @@ export default function ContentPageMobile() {
         </SelectContent>
       </Select>
 
-      <div>
-        {DataTabsList.map(
-          tab => tab.text === selectedValue && <div key={tab.text}>{tab.component}</div>,
-        )}
-      </div>
-      <div />
+      {DataTabsList.map(
+        tab =>
+          tab.text === selectedValue && (
+            <React.Fragment key={tab.text}>{tab.component}</React.Fragment>
+          ),
+      )}
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function CountrySection({ form }: any) {
         control={form.control}
         name='country'
         render={({ field }) => (
-          <FormItem>
+          <FormItem className='mt-[6px] sm:mt-0'>
             <Select
               onValueChange={field.onChange}
               defaultValue={field.value}

@@ -34,8 +34,8 @@ export default function BioSection({ form }: any) {
         name='bio'
         render={({ field }) => (
           <FormItem>
-            <div className='flex flex-col gap-3'>
-              <div className='flex gap-4'>
+            <div className='mt-5 flex flex-col gap-4 sm:mt-0 sm:gap-3'>
+              <div className='flex flex-col items-start gap-2 sm:flex-row sm:gap-4'>
                 <Select>
                   <SelectTrigger className='w-full'>
                     <SelectValue placeholder='Normal Text' />

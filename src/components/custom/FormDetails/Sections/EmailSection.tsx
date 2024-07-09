@@ -11,13 +11,15 @@ export default function EmailSection({ form }: any) {
         name='email'
         render={({ field }) => (
           <FormItem className='flex-1'>
-            <Input
-              type='email'
-              id='email'
-              placeholder='Your best e-mail'
-              icon={<EnvelopeIcon className='size-4 text-zinc-700' />}
-              {...field}
-            />
+            <div className='mt-5 sm:mt-0'>
+              <Input
+                type='email'
+                id='email'
+                placeholder='Your best e-mail'
+                icon={<EnvelopeIcon className='size-4 text-zinc-700' />}
+                {...field}
+              />
+            </div>
           </FormItem>
         )}
       />

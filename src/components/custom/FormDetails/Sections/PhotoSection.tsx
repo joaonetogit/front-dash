@@ -13,7 +13,7 @@ export default function PhotoSection({ form }: any) {
         control={form.control}
         name='email'
         render={() => (
-          <FormItem className='mt-0 flex gap-4'>
+          <FormItem className='mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:gap-4'>
             <div className='flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F5FF]'>
               <UserIcon className='size-8 text-[#7F56D9]' />
             </div>

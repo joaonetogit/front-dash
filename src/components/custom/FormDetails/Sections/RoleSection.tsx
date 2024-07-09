@@ -9,7 +9,7 @@ export default function RoleSection({ form }: any) {
         control={form.control}
         name='role'
         render={({ field }) => (
-          <FormItem>
+          <FormItem className='mt-[6px] sm:mt-0'>
             <Input
               type='text'
               id='role'

@@ -9,7 +9,7 @@ export default function PortfolioSection() {
       title='Portfolio projects'
       supportText='Share a few snippets of your work.'
     >
-      <div className='space-y-4'>
+      <div className='mt-5 space-y-4 sm:mt-0'>
         <DragDropFiles />
         <div className='space-y-4'>
           {archives.map(archive => (

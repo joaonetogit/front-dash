@@ -19,7 +19,7 @@ export default function TimezoneSection({ form }: any) {
         control={form.control}
         name='timezone'
         render={({ field }) => (
-          <FormItem className='flex-1'>
+          <FormItem className='mt-[6px] flex-1 sm:mt-0'>
             <Select
               onValueChange={field.onChange}
               defaultValue={field.value}
