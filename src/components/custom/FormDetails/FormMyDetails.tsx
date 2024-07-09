@@ -4,8 +4,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import React, { useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { Button } from '../../ui/Button';
 import { Form } from '../../ui/Form';
+import FormMyDetailsFooter from './FormMyDetailsFooter';
 import FormMyDetailsHeader from './FormMyDetailsHeader';
 import BioSection from './Sections/BioSection';
 import CountrySection from './Sections/CountrySection';
@@ -28,6 +28,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
+const RenderHeader = React.memo(FormMyDetailsHeader);
 const RenderNameSection = React.memo(NameSection);
 const RenderEmailSection = React.memo(EmailSection);
 const RenderPhotoSection = React.memo(PhotoSection);
@@ -36,6 +37,7 @@ const RenderCountrySection = React.memo(CountrySection);
 const RenderTimezoneSection = React.memo(TimezoneSection);
 const RenderBioSection = React.memo(BioSection);
 const RenderPortfolioSection = React.memo(PortfolioSection);
+const RenderFooter = React.memo(FormMyDetailsFooter);
 
 export default function FormMyDetails() {
   const form = useForm<FormValues>({
@@ -58,20 +60,7 @@ export default function FormMyDetails() {
         onSubmit={form.handleSubmit(onSubmit)}
         className='space-y-8'
       >
-        <FormMyDetailsHeader>
-          <div className='space-x-3'>
-            <Button variant='outline'>Cancel</Button>
-            <Button
-              type='submit'
-              name='action'
-              value='save'
-              variant='primary'
-            >
-              Save
-            </Button>
-          </div>
-        </FormMyDetailsHeader>
-
+        <RenderHeader />
         <RenderNameSection form={form} />
         <RenderEmailSection form={form} />
         <RenderPhotoSection form={form} />
@@ -80,18 +69,7 @@ export default function FormMyDetails() {
         <RenderTimezoneSection form={form} />
         <RenderBioSection form={form} />
         <RenderPortfolioSection />
-
-        <div className='flex justify-end gap-3 pt-4'>
-          <Button variant='outline'>Cancel</Button>
-          <Button
-            type='submit'
-            name='action'
-            value='submit-and-next'
-            variant='primary'
-          >
-            Save
-          </Button>
-        </div>
+        <RenderFooter />
       </form>
     </Form>
   );
