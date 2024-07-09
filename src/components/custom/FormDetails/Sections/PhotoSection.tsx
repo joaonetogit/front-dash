@@ -15,7 +15,7 @@ export default function PhotoSection({ form }: any) {
         render={() => (
           <FormItem className='mt-0 flex gap-4'>
             <div className='flex h-16 w-16 items-center justify-center rounded-full bg-[#F9F5FF]'>
-              <UserIcon className='size-6 text-[#7F56D9]' />
+              <UserIcon className='size-8 text-[#7F56D9]' />
             </div>
             <DragDropFiles />
           </FormItem>
