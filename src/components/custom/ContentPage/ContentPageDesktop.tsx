@@ -1,7 +1,7 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
 import DataTabsList from '@/constants/TabsList';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/Tabs';
 
-export default function TabsOnSettings() {
+export default function ContentPageDesktop() {
   return (
     <Tabs
       defaultValue={DataTabsList[0].text}
