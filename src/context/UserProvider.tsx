@@ -10,7 +10,7 @@ const UserContext = createContext<IUserContextProps>({
 
 export function UserProvider({ children }: IChildren) {
   const [user] = useState<IUser | null>({
-    image: 'https://mui.com/static/images/avatar/3.jpg',
+    image: '/avatar.jpg',
     name: 'Olivia Rhye',
     email: 'olivia@untitledui.com',
     percentStorageUsed: 80,
