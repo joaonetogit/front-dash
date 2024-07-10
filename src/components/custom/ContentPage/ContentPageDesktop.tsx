@@ -14,6 +14,7 @@ export default function ContentPageDesktop() {
               key={tab.text}
               value={tab.text}
               aria-label={`Button tab for ${tab.text}`}
+              aria-checked={DataTabsList.some(dataTab => dataTab.text === tab.text)}
             >
               <p>{tab.text}</p>
               {tab.qtd && (

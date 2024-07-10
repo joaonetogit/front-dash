@@ -26,6 +26,7 @@ export default function CardUploadArchive({ icon, title, size, progress }: ICard
               barColor='bg-violet-600'
               aria-valuenow={progress}
               aria-label={`Progress bar for ${title}`}
+              aria-labelledby={`Progress bar for card upload archive ${title}`}
             />
             <p className='text-sm font-medium text-zinc-700'>{progress}%</p>
           </div>
