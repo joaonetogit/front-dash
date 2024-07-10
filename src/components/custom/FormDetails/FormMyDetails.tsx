@@ -1,9 +1,7 @@
 'use client';
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import React, { useCallback } from 'react';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
+import useFormMyDetails from '@/hooks/useFormMyDetails';
+import React from 'react';
 import { Form } from '../../ui/Form';
 import FormMyDetailsFooter from './FormMyDetailsFooter';
 import FormMyDetailsHeader from './FormMyDetailsHeader';
@@ -15,18 +13,6 @@ import PhotoSection from './Sections/PhotoSection';
 import PortfolioSection from './Sections/PortfolioSection';
 import RoleSection from './Sections/RoleSection';
 import TimezoneSection from './Sections/TimezoneSection';
-
-const formSchema = z.object({
-  firstName: z.string().min(2),
-  lastName: z.string().min(2),
-  email: z.string().email(),
-  role: z.string().min(2),
-  timezone: z.string().min(2),
-  country: z.string().min(2),
-  bio: z.string().min(2),
-});
-
-type FormValues = z.infer<typeof formSchema>;
 
 const RenderHeader = React.memo(FormMyDetailsHeader);
 const RenderNameSection = React.memo(NameSection);
@@ -40,19 +26,7 @@ const RenderPortfolioSection = React.memo(PortfolioSection);
 const RenderFooter = React.memo(FormMyDetailsFooter);
 
 export default function FormMyDetails() {
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      role: '',
-    },
-  });
-
-  const onSubmit = useCallback((values: FormValues) => {
-    console.log(values);
-  }, []);
+  const { form, onSubmit } = useFormMyDetails();
 
   return (
     <Form {...form}>

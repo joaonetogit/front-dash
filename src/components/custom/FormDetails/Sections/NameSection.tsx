@@ -1,10 +1,13 @@
-import { FormField, FormItem, FormLabel } from '@/components/ui/Form';
+import { FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function NameSection({ form }: any) {
   return (
-    <FormMyDetailsRowContent title='Name' hiddenTitleOnMobile>
+    <FormMyDetailsRowContent
+      title='Name'
+      hiddenTitleOnMobile
+    >
       <div className='flex w-full flex-col items-center gap-5 sm:flex-row'>
         <FormField
           control={form.control}
@@ -18,6 +21,7 @@ export default function NameSection({ form }: any) {
                 placeholder='First Name'
                 {...field}
               />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -33,6 +37,7 @@ export default function NameSection({ form }: any) {
                 placeholder='Last Name'
                 {...field}
               />
+              <FormMessage />
             </FormItem>
           )}
         />

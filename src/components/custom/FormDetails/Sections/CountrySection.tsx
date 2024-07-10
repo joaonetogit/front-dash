@@ -1,4 +1,4 @@
-import { FormControl, FormField, FormItem } from '@/components/ui/Form';
+import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/Form';
 import {
   Select,
   SelectContent,
@@ -40,6 +40,7 @@ export default function CountrySection({ form }: any) {
                 ))}
               </SelectContent>
             </Select>
+            <FormMessage />
           </FormItem>
         )}
       />

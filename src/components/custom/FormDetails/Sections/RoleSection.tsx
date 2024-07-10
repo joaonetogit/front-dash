@@ -1,4 +1,4 @@
-import { FormField, FormItem } from '@/components/ui/Form';
+import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
@@ -16,6 +16,7 @@ export default function RoleSection({ form }: any) {
               placeholder='Your role'
               {...field}
             />
+            <FormMessage />
           </FormItem>
         )}
       />

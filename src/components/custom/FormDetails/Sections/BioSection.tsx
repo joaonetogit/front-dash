@@ -1,6 +1,4 @@
-'use client';
-
-import { FormField, FormItem } from '@/components/ui/Form';
+import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
 import {
   Select,
   SelectContent,
@@ -11,18 +9,11 @@ import {
 import { Textarea } from '@/components/ui/Textarea';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/ToggleGroup';
 import DataToogleBioText from '@/constants/ToogleBioText';
-import { useState } from 'react';
+import useBioSection from '@/hooks/useBioSection';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-const MAX_CHAR_COUNT = 275;
-
 export default function BioSection({ form }: any) {
-  const [charCount, setCharCount] = useState(MAX_CHAR_COUNT);
-
-  const handleTextareaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const remainingChars = MAX_CHAR_COUNT - event.target.value.length;
-    setCharCount(remainingChars);
-  };
+  const { charCount, handleTextareaChange, MAX_CHAR_COUNT } = useBioSection();
 
   return (
     <FormMyDetailsRowContent
@@ -80,6 +71,7 @@ export default function BioSection({ form }: any) {
                 </p>
               </div>
             </div>
+            <FormMessage />
           </FormItem>
         )}
       />
