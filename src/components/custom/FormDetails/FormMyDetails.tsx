@@ -1,7 +1,7 @@
 'use client';
 
 import useFormMyDetails from '@/hooks/useFormMyDetails';
-import React from 'react';
+import { memo } from 'react';
 import { Form } from '../../ui/Form';
 import FormMyDetailsFooter from './FormMyDetailsFooter';
 import FormMyDetailsHeader from './FormMyDetailsHeader';
@@ -14,16 +14,16 @@ import PortfolioSection from './Sections/PortfolioSection';
 import RoleSection from './Sections/RoleSection';
 import TimezoneSection from './Sections/TimezoneSection';
 
-const RenderHeader = React.memo(FormMyDetailsHeader);
-const RenderNameSection = React.memo(NameSection);
-const RenderEmailSection = React.memo(EmailSection);
-const RenderPhotoSection = React.memo(PhotoSection);
-const RenderRoleSection = React.memo(RoleSection);
-const RenderCountrySection = React.memo(CountrySection);
-const RenderTimezoneSection = React.memo(TimezoneSection);
-const RenderBioSection = React.memo(BioSection);
-const RenderPortfolioSection = React.memo(PortfolioSection);
-const RenderFooter = React.memo(FormMyDetailsFooter);
+const RenderHeader = memo(FormMyDetailsHeader);
+const RenderNameSection = memo(NameSection);
+const RenderEmailSection = memo(EmailSection);
+const RenderPhotoSection = memo(PhotoSection);
+const RenderRoleSection = memo(RoleSection);
+const RenderCountrySection = memo(CountrySection);
+const RenderTimezoneSection = memo(TimezoneSection);
+const RenderBioSection = memo(BioSection);
+const RenderPortfolioSection = memo(PortfolioSection);
+const RenderFooter = memo(FormMyDetailsFooter);
 
 export default function FormMyDetails() {
   const { form, onSubmit } = useFormMyDetails();

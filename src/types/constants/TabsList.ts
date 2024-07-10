@@ -1,5 +1,7 @@
+import { ReactNode } from 'react';
+
 export interface ITabsList {
   text: string;
   qtd?: number;
-  component?: React.ReactNode;
+  component?: ReactNode;
 }

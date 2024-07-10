@@ -9,7 +9,7 @@ import {
   SelectValue,
 } from '@/components/ui/Select';
 import DataTabsList from '@/constants/TabsList';
-import React, { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 export default function ContentPageMobile() {
   const [selectedValue, setSelectedValue] = useState(DataTabsList[0].text);
@@ -37,7 +37,7 @@ export default function ContentPageMobile() {
       {DataTabsList.map(
         tab =>
           tab.text === selectedValue && (
-            <React.Fragment key={tab.text}>{tab.component}</React.Fragment>
+            <Fragment key={tab.text}>{tab.component}</Fragment>
           ),
       )}
     </div>
