@@ -32,7 +32,7 @@ export default function PhotoSection({ form }: IPhotoSection) {
                 <UserIcon className='size-8 text-[#7F56D9]' />
               )}
             </div>
-            <div className='w-full'>
+            <div className='flex-1 w-full'>
               <DragDropFiles onFileSelect={handleFileSelect} />
               <FormMessage />
             </div>
