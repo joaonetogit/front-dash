@@ -7,11 +7,12 @@ import {
   SelectValue,
 } from '@/components/ui/Select';
 import timezones from '@/constants/Timezones';
+import { IForm } from '@/types/base';
 import { ClockIcon } from '@radix-ui/react-icons';
 import SelectedValue from '../../SelectedValue';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-export default function TimezoneSection({ form }: any) {
+export default function TimezoneSection({ form }: IForm) {
   return (
     <FormMyDetailsRowContent title='Timezone'>
       <FormField

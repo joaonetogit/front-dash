@@ -1,3 +1,5 @@
+import { Control } from 'react-hook-form';
+
 export interface IChildren {
   children: React.ReactNode;
 }
@@ -11,4 +13,10 @@ export interface IUser {
 
 export interface IClassName {
   className?: string;
+}
+
+export interface IForm {
+  form: {
+    control: Control<any>;
+  };
 }

@@ -7,9 +7,10 @@ import {
   SelectValue,
 } from '@/components/ui/Select';
 import countries from '@/constants/Countries';
+import { IForm } from '@/types/base';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-export default function CountrySection({ form }: any) {
+export default function CountrySection({ form }: IForm) {
   return (
     <FormMyDetailsRowContent title='Country'>
       <FormField

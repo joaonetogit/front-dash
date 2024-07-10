@@ -8,6 +8,7 @@ const formSchema = z.object({
   timezone: z.string().min(2, 'Timezone Required'),
   country: z.string().min(2, 'Country Required'),
   bio: z.string().min(2, 'Bio Required'),
+  photo: z.instanceof(File).refine(file => file.size > 0, 'Photo is required'),
 });
 
 export default formSchema;

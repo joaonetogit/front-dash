@@ -1,8 +1,9 @@
 import { FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
+import { IForm } from '@/types/base';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-export default function NameSection({ form }: any) {
+export default function NameSection({ form }: IForm) {
   return (
     <FormMyDetailsRowContent
       title='Name'

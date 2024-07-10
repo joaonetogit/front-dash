@@ -1,9 +1,10 @@
 import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
+import { IForm } from '@/types/base';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-export default function EmailSection({ form }: any) {
+export default function EmailSection({ form }: IForm) {
   return (
     <FormMyDetailsRowContent title='Email address'>
       <FormField

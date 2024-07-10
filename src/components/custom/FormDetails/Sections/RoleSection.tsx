@@ -1,8 +1,9 @@
 import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
 import { Input } from '@/components/ui/Input';
+import { IForm } from '@/types/base';
 import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
-export default function RoleSection({ form }: any) {
+export default function RoleSection({ form }: IForm) {
   return (
     <FormMyDetailsRowContent title='Role'>
       <FormField
