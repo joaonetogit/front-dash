@@ -23,7 +23,10 @@ export default function CountrySection({ form }: IForm) {
               defaultValue={field.value}
             >
               <FormControl>
-                <SelectTrigger className='w-full'>
+                <SelectTrigger
+                  className='w-full'
+                  aria-label='Select country'
+                >
                   <SelectValue placeholder={`${countries[0].flag} ${countries[0].name}`} />
                 </SelectTrigger>
               </FormControl>

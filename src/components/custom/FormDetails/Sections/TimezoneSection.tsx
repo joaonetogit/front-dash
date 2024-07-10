@@ -26,6 +26,7 @@ export default function TimezoneSection({ form }: IForm) {
             >
               <FormControl>
                 <SelectTrigger
+                  aria-label='Select timezone'
                   className='w-full'
                   icon={<ClockIcon className='size-4 text-[#71717A]' />}
                 >

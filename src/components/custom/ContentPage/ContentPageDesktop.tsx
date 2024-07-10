@@ -13,6 +13,7 @@ export default function ContentPageDesktop() {
             <TabsTrigger
               key={tab.text}
               value={tab.text}
+              aria-label={`Button tab for ${tab.text}`}
             >
               <p>{tab.text}</p>
               {tab.qtd && (

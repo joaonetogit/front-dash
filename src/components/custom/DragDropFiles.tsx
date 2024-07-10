@@ -10,6 +10,7 @@ export default function DragDropFiles({ onFileSelect }: IDragDropFiles) {
     <div className='relative h-full w-full flex-1 rounded-md border border-[#EAECF0] px-6 py-4'>
       <input
         type='file'
+        aria-label='Upload file input'
         className='absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0'
         onChange={handleFileChange}
       />

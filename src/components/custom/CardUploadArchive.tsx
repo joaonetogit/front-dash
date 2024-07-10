@@ -5,8 +5,8 @@ import { Card, CardContent } from '../ui/Card';
 import { Progress } from '../ui/Progress';
 import FeaturedIcon from './FeaturedIcon';
 
-export default function CardUploadArchive({ archive }: ICardUploadArchive) {
-  const isUploaded = archive.progress === 100;
+export default function CardUploadArchive({ icon, title, size, progress }: ICardUploadArchive) {
+  const isUploaded = progress === 100;
 
   return (
     <Card
@@ -14,18 +14,19 @@ export default function CardUploadArchive({ archive }: ICardUploadArchive) {
     >
       <CardContent className='flex gap-4 p-0'>
         <FeaturedIcon
-          icon={archive.icon}
+          icon={icon}
           variant='primary'
         />
         <div className='flex-1'>
-          <p className='text-sm font-medium text-zinc-700 sm:text-base'>{archive.title}</p>
-          <p className='text-sm text-zinc-500 sm:text-base'>{archive.size}</p>
+          <p className='text-sm font-medium text-zinc-700 sm:text-base'>{title}</p>
+          <p className='text-sm text-zinc-500 sm:text-base'>{size}</p>
           <div className='flex items-center gap-3'>
             <Progress
-              value={archive.progress}
+              value={progress}
               barColor='bg-violet-600'
+              aria-label={`Progress bar for ${title} with ${progress}% completed.`}
             />
-            <p className='text-sm font-medium text-zinc-700'>{archive.progress}%</p>
+            <p className='text-sm font-medium text-zinc-700'>{progress}%</p>
           </div>
         </div>
         <button

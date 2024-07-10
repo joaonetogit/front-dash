@@ -14,7 +14,10 @@ export default function PortfolioSection() {
         <div className='space-y-4'>
           {archives.map(archive => (
             <CardUploadArchive
-              archive={archive}
+              icon={archive.icon}
+              progress={archive.progress}
+              size={archive.size}
+              title={archive.title}
               key={archive.title}
             />
           ))}

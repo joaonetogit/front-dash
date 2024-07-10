@@ -1,8 +1,8 @@
+import React from 'react';
+
 export interface ICardUploadArchive {
-  archive: {
-    icon: any;
-    title: string;
-    size: string;
-    progress: number;
-  };
+  icon: React.ReactNode;
+  title: string;
+  size: string;
+  progress: number;
 }

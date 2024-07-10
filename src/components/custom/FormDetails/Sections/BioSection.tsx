@@ -29,7 +29,10 @@ export default function BioSection({ form }: IForm) {
             <div className='mt-5 flex flex-col gap-4 sm:mt-0 sm:gap-3'>
               <div className='flex flex-col items-start gap-2 sm:flex-row sm:gap-4'>
                 <Select>
-                  <SelectTrigger className='w-full'>
+                  <SelectTrigger
+                    className='w-full'
+                    aria-label='Select text style'
+                  >
                     <SelectValue placeholder='Normal Text' />
                   </SelectTrigger>
                   <SelectContent>
