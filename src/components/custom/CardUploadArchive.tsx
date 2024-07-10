@@ -24,14 +24,16 @@ export default function CardUploadArchive({ icon, title, size, progress }: ICard
             <Progress
               value={progress}
               barColor='bg-violet-600'
-              aria-label={`Progress bar for ${title} with ${progress}% completed.`}
+              aria-valuenow={progress}
+              aria-label={`Progress bar for ${title}`}
             />
             <p className='text-sm font-medium text-zinc-700'>{progress}%</p>
           </div>
         </div>
         <button
           type='button'
-          className='h-fit'
+          className='h-fit p-3'
+          aria-label={isUploaded ? 'Remove file button' : 'Upload file button'}
         >
           {isUploaded ? (
             <CheckCircleIcon className='size-5 fill-violet-600' />
