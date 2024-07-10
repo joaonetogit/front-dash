@@ -4,8 +4,8 @@ import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function NameSection({ form }: any) {
   return (
-    <FormMyDetailsRowContent hiddenTitle>
-      <div className='flex w-full flex-col items-center gap-4 sm:flex-row'>
+    <FormMyDetailsRowContent title='Name' hiddenTitleOnMobile>
+      <div className='flex w-full flex-col items-center gap-5 sm:flex-row'>
         <FormField
           control={form.control}
           name='firstName'

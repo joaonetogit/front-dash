@@ -18,8 +18,8 @@ export default function CardUploadArchive({ archive }: ICardUploadArchive) {
           variant='primary'
         />
         <div className='flex-1'>
-          <p className='font-medium text-zinc-700'>{archive.title}</p>
-          <p className='text-zinc-500'>{archive.size}</p>
+          <p className='text-sm font-medium text-zinc-700 sm:text-base'>{archive.title}</p>
+          <p className='text-sm text-zinc-500 sm:text-base'>{archive.size}</p>
           <div className='flex items-center gap-3'>
             <Progress
               value={archive.progress}

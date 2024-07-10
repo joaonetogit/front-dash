@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/Button';
+import cn from '@/lib/utils';
+import { IFormMyDetailsActions } from '@/types/components/FormMyDetailsActions';
 
-export default function FormMyDetailsActions() {
+export default function FormMyDetailsActions({ className }: IFormMyDetailsActions) {
   return (
-    <div className='flex gap-3 sm:justify-end'>
+    <div className={cn('flex gap-3 sm:justify-end', className)}>
       <Button variant='outline'>Cancel</Button>
       <Button
         type='submit'

@@ -28,7 +28,7 @@ const innerDivStyles = cva('flex h-full w-full items-center justify-center round
 const iconVariantStyles = cva('', {
   variants: {
     variant: {
-      default: 'text-[#6B7280] size-5 stroke-[1.67px]',
+      default: 'text-[#52525B] size-5 stroke-[1.67px]',
       primary: 'text-violet-600 size-4 stroke-[1.33px]',
     },
   },
