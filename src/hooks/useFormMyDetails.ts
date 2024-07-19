@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import formSchema from "@/constants/FormSchema";
 import type { FormValues } from "@/types/components/FormMyDetails";
 import { zodResolver } from "@hookform/resolvers/zod";
