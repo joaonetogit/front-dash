@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 export interface IFeaturedIcon {
-  variant?: 'default' | 'primary';
-  icon: ReactNode;
+	variant?: "default" | "primary";
+	icon: ReactNode;
 }

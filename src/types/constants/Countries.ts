@@ -1,5 +1,5 @@
 export interface ICountries {
-  flag: string;
-  name: string;
-  value: string;
+	flag: string;
+	name: string;
+	value: string;
 }

@@ -1,5 +1,5 @@
 export interface IDataToogleBioText {
-  icon: JSX.Element;
-  value: string;
-  ariaLabel: string;
+	icon: JSX.Element;
+	value: string;
+	ariaLabel: string;
 }

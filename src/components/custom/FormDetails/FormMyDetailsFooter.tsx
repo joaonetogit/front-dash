@@ -1,9 +1,9 @@
-import FormMyDetailsActions from './FormMyDetailsActions';
+import FormMyDetailsActions from "./FormMyDetailsActions";
 
 export default function FormMyDetailsFooter() {
-  return (
-    <div className='!mt-0 pt-4'>
-      <FormMyDetailsActions className='justify-end' />
-    </div>
-  );
+	return (
+		<div className="!mt-0 pt-4">
+			<FormMyDetailsActions className="justify-end" />
+		</div>
+	);
 }

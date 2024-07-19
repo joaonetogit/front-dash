@@ -1,3 +1,3 @@
 export interface IFormMyDetailsActions {
-  className?: string;
+	className?: string;
 }

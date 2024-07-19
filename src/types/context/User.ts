@@ -1,5 +1,5 @@
-import { IUser } from '../base';
+import type { IUser } from "../base";
 
 export interface IUserContextProps {
-  user: IUser | null;
+	user: IUser | null;
 }
