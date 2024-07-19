@@ -1,47 +1,47 @@
-import FormMyDetails from "@/components/custom/FormDetails/FormMyDetails";
-import type { ITabsList } from "@/types/constants/TabsList";
+import FormMyDetails from '@/components/custom/FormDetails/FormMyDetails';
+import type { ITabsList } from '@/types/constants/TabsList';
 
 const DataTabsList: ITabsList[] = [
 	{
-		text: "My details",
+		text: 'My details',
 		component: <FormMyDetails />,
 	},
 	{
-		text: "Profile",
+		text: 'Profile',
 		component: <div>Profile</div>,
 	},
 	{
-		text: "Password",
+		text: 'Password',
 		component: <div>Password</div>,
 	},
 	{
-		text: "Team",
+		text: 'Team',
 		qtd: 4,
 		component: <div>Team</div>,
 	},
 	{
-		text: "Plan",
+		text: 'Plan',
 		component: <div>Plan</div>,
 	},
 	{
-		text: "Billing",
+		text: 'Billing',
 		qtd: 4,
 		component: <div>Billing</div>,
 	},
 	{
-		text: "Email",
+		text: 'Email',
 		component: <div>Email</div>,
 	},
 	{
-		text: "Notifications",
+		text: 'Notifications',
 		component: <div>Notifications</div>,
 	},
 	{
-		text: "Integrations",
+		text: 'Integrations',
 		component: <div>Integrations</div>,
 	},
 	{
-		text: "API",
+		text: 'API',
 		component: <div>API</div>,
 	},
 ] as const;

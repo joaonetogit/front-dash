@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { FormField, FormItem, FormMessage } from "@/components/ui/Form";
-import type { IForm } from "@/types/base";
-import { UserIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-import { useCallback, useState } from "react";
-import DragDropFiles from "../../DragDropFiles";
-import FormMyDetailsRowContent from "../FormMyDetailsRowContent";
+import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
+import type { IForm } from '@/types/base';
+import { UserIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import { useCallback, useState } from 'react';
+import DragDropFiles from '../../DragDropFiles';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function PhotoSection({ form }: IForm) {
 	const [selectedFile, setSelectedFile] = useState<string | null>(null);
@@ -14,7 +14,7 @@ export default function PhotoSection({ form }: IForm) {
 	const handleFileSelect = useCallback(
 		(file: File) => {
 			setSelectedFile(URL.createObjectURL(file));
-			form.setValue("photo", file);
+			form.setValue('photo', file);
 		},
 		[form],
 	);

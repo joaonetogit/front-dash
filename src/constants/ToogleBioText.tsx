@@ -1,31 +1,31 @@
-import type { IDataToogleBioText } from "@/types/constants/ToogleBioText";
-import { FontBoldIcon, FontItalicIcon, Link1Icon, ListBulletIcon, UnderlineIcon } from "@radix-ui/react-icons";
+import type { IDataToogleBioText } from '@/types/constants/ToogleBioText';
+import { FontBoldIcon, FontItalicIcon, Link1Icon, ListBulletIcon, UnderlineIcon } from '@radix-ui/react-icons';
 
 const DataToogleBioText: IDataToogleBioText[] = [
 	{
 		icon: <FontBoldIcon />,
-		value: "bold",
-		ariaLabel: "Toggle bold",
+		value: 'bold',
+		ariaLabel: 'Toggle bold',
 	},
 	{
 		icon: <FontItalicIcon />,
-		value: "italic",
-		ariaLabel: "Toggle italic",
+		value: 'italic',
+		ariaLabel: 'Toggle italic',
 	},
 	{
 		icon: <UnderlineIcon />,
-		value: "underline",
-		ariaLabel: "Toggle underline",
+		value: 'underline',
+		ariaLabel: 'Toggle underline',
 	},
 	{
 		icon: <Link1Icon />,
-		value: "link",
-		ariaLabel: "Toggle link",
+		value: 'link',
+		ariaLabel: 'Toggle link',
 	},
 	{
 		icon: <ListBulletIcon />,
-		value: "list",
-		ariaLabel: "Toggle list",
+		value: 'list',
+		ariaLabel: 'Toggle list',
 	},
 ] as const;
 

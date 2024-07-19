@@ -1,5 +1,5 @@
-import { Bars3CenterLeftIcon } from "@heroicons/react/24/outline";
-import Logo from "./Logo";
+import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline';
+import Logo from './Logo';
 
 export default function Header() {
 	return (

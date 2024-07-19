@@ -1,6 +1,6 @@
-import SidebarMenu from "@/constants/SidebarMenu";
-import type { ISidebarMenu } from "@/types/constants/SidebarMenu";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../../ui/Accordion";
+import SidebarMenu from '@/constants/SidebarMenu';
+import type { ISidebarMenu } from '@/types/constants/SidebarMenu';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../ui/Accordion';
 
 export default function SidebarNavListAccordion() {
 	return (

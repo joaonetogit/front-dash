@@ -1,11 +1,11 @@
-import { FormField, FormItem, FormMessage } from "@/components/ui/Form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
-import { Textarea } from "@/components/ui/Textarea";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/ToggleGroup";
-import DataToogleBioText from "@/constants/ToogleBioText";
-import useBioSection from "@/hooks/useBioSection";
-import type { IForm } from "@/types/base";
-import FormMyDetailsRowContent from "../FormMyDetailsRowContent";
+import { FormField, FormItem, FormMessage } from '@/components/ui/Form';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
+import { Textarea } from '@/components/ui/Textarea';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/ToggleGroup';
+import DataToogleBioText from '@/constants/ToogleBioText';
+import useBioSection from '@/hooks/useBioSection';
+import type { IForm } from '@/types/base';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function BioSection({ form }: IForm) {
 	const { charCount, handleTextareaChange, MAX_CHAR_COUNT } = useBioSection();

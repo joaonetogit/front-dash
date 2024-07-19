@@ -1,4 +1,4 @@
-import ButtonsForSidebarButtonsConfigs from "@/constants/SidebarButtonsConfigs";
+import ButtonsForSidebarButtonsConfigs from '@/constants/SidebarButtonsConfigs';
 
 export default function SidebarButtonsConfigs() {
 	return (

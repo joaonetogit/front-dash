@@ -1,4 +1,4 @@
-import type { ISidebarMenu } from "@/types/constants/SidebarMenu";
+import type { ISidebarMenu } from '@/types/constants/SidebarMenu';
 import {
 	Bars3BottomRightIcon,
 	CheckBadgeIcon,
@@ -6,90 +6,90 @@ import {
 	FlagIcon,
 	HomeIcon,
 	UsersIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 const SidebarMenu: ISidebarMenu[] = [
 	{
 		id: 1,
-		title: "Home",
+		title: 'Home',
 		icon: <HomeIcon />,
-		link: "/dashboard",
+		link: '/dashboard',
 		subMenu: [
 			{
-				title: "Submenu Home",
+				title: 'Submenu Home',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},
 	{
 		id: 2,
-		title: "Dashboard",
+		title: 'Dashboard',
 		icon: <Bars3BottomRightIcon className="rotate-90" />,
-		link: "/users",
+		link: '/users',
 		subMenu: [
 			{
-				title: "Submenu Dashboard",
+				title: 'Submenu Dashboard',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},
 	{
 		id: 3,
-		title: "Projects",
+		title: 'Projects',
 		icon: <DocumentDuplicateIcon />,
-		link: "/settings",
+		link: '/settings',
 		subMenu: [
 			{
-				title: "Submenu Projects",
+				title: 'Submenu Projects',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},
 	{
 		id: 4,
-		title: "Tasks",
+		title: 'Tasks',
 		icon: <CheckBadgeIcon />,
-		link: "/logout",
+		link: '/logout',
 		subMenu: [
 			{
-				title: "Submenu Tasks",
+				title: 'Submenu Tasks',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},
 	{
 		id: 5,
-		title: "Reporting",
+		title: 'Reporting',
 		icon: <FlagIcon />,
-		link: "/logout",
+		link: '/logout',
 		subMenu: [
 			{
-				title: "Submenu Reporting",
+				title: 'Submenu Reporting',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},
 	{
 		id: 6,
-		title: "Users",
+		title: 'Users',
 		icon: <UsersIcon />,
-		link: "/logout",
+		link: '/logout',
 		subMenu: [
 			{
-				title: "Submenu Users",
+				title: 'Submenu Users',
 			},
 			{
-				title: "Submenu 2",
+				title: 'Submenu 2',
 			},
 		],
 	},

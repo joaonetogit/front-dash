@@ -1,19 +1,19 @@
-import Providers from "@/context/Providers";
-import type { IChildren } from "@/types/base";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import Providers from '@/context/Providers';
+import type { IChildren } from '@/types/base';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-	subsets: ["latin"],
-	weight: ["400", "500", "600", "700"],
-	display: "swap",
-	variable: "--font-inter",
+	subsets: ['latin'],
+	weight: ['400', '500', '600', '700'],
+	display: 'swap',
+	variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
-	title: "Frontend Dashboard",
-	description: "Frontend dashboard for your app",
+	title: 'Frontend Dashboard',
+	description: 'Frontend dashboard for your app',
 };
 
 export default function RootLayout({ children }: Readonly<IChildren>) {

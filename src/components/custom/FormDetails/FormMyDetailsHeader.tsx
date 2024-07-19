@@ -1,5 +1,5 @@
-import { Separator } from "@/components/ui/Separator";
-import FormMyDetailsActions from "./FormMyDetailsActions";
+import { Separator } from '@/components/ui/Separator';
+import FormMyDetailsActions from './FormMyDetailsActions';
 
 export default function FormMyDetailsHeader() {
 	return (

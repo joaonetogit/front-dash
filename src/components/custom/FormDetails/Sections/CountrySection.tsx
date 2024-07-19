@@ -1,8 +1,8 @@
-import { FormControl, FormField, FormItem, FormMessage } from "@/components/ui/Form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
-import countries from "@/constants/Countries";
-import type { IForm } from "@/types/base";
-import FormMyDetailsRowContent from "../FormMyDetailsRowContent";
+import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/Form';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
+import countries from '@/constants/Countries';
+import type { IForm } from '@/types/base';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function CountrySection({ form }: IForm) {
 	return (

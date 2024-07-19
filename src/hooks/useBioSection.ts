@@ -1,4 +1,4 @@
-import { type ChangeEvent, useCallback, useState } from "react";
+import { type ChangeEvent, useCallback, useState } from 'react';
 
 const MAX_CHAR_COUNT = 275;
 

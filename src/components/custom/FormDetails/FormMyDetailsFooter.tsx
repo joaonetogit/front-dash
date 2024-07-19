@@ -1,4 +1,4 @@
-import FormMyDetailsActions from "./FormMyDetailsActions";
+import FormMyDetailsActions from './FormMyDetailsActions';
 
 export default function FormMyDetailsFooter() {
 	return (

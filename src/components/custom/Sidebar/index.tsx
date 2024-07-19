@@ -1,11 +1,11 @@
-import { Separator } from "../../ui/Separator";
-import Logo from "../Logo";
-import UsedSpace from "../UsedSpace";
-import User from "../User";
-import SearchInput from "./SearchInput";
-import SidebarButtonsConfigs from "./SidebarButtonsConfigs";
-import SidebarContent from "./SidebarContent";
-import SidebarNavListAccordion from "./SidebarNavList";
+import { Separator } from '../../ui/Separator';
+import Logo from '../Logo';
+import UsedSpace from '../UsedSpace';
+import User from '../User';
+import SearchInput from './SearchInput';
+import SidebarButtonsConfigs from './SidebarButtonsConfigs';
+import SidebarContent from './SidebarContent';
+import SidebarNavListAccordion from './SidebarNavList';
 
 export default function Sidebar() {
 	return (

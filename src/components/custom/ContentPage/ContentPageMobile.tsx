@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
-import DataTabsList from "@/constants/TabsList";
-import { Fragment, useState } from "react";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
+import DataTabsList from '@/constants/TabsList';
+import { Fragment, useState } from 'react';
 
 export default function ContentPageMobile() {
 	const [selectedValue, setSelectedValue] = useState(DataTabsList[0].text);

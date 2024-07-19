@@ -1,16 +1,16 @@
-import type { ISidebarButtonsConfigs } from "@/types/constants/SidebarMenu";
-import { Cog8ToothIcon, LifebuoyIcon } from "@heroicons/react/24/outline";
+import type { ISidebarButtonsConfigs } from '@/types/constants/SidebarMenu';
+import { Cog8ToothIcon, LifebuoyIcon } from '@heroicons/react/24/outline';
 
 const ButtonsForSidebarButtonsConfigs: ISidebarButtonsConfigs[] = [
 	{
-		title: "Support",
+		title: 'Support',
 		icon: <LifebuoyIcon />,
-		link: "/support",
+		link: '/support',
 	},
 	{
-		title: "Settings",
+		title: 'Settings',
 		icon: <Cog8ToothIcon />,
-		link: "/settings",
+		link: '/settings',
 	},
 ] as const;
 

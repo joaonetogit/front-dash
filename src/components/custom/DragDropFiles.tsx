@@ -1,7 +1,7 @@
-import useDragDropFiles from "@/hooks/useDragDropFiles";
-import type { IDragDropFiles } from "@/types/components/DragDropFiles";
-import { CloudArrowUpIcon } from "@heroicons/react/24/outline";
-import FeaturedIcon from "./FeaturedIcon";
+import useDragDropFiles from '@/hooks/useDragDropFiles';
+import type { IDragDropFiles } from '@/types/components/DragDropFiles';
+import { CloudArrowUpIcon } from '@heroicons/react/24/outline';
+import FeaturedIcon from './FeaturedIcon';
 
 export default function DragDropFiles({ onFileSelect }: IDragDropFiles) {
 	const { handleFileChange } = useDragDropFiles(onFileSelect);

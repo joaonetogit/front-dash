@@ -1,4 +1,4 @@
-import type { ITimezone } from "../constants/Timezones";
+import type { ITimezone } from '../constants/Timezones';
 
 export interface ISelectedValue {
 	archive: ITimezone | ITimezone[];

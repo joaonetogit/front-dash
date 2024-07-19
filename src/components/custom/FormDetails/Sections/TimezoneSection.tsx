@@ -1,10 +1,10 @@
-import { FormControl, FormField, FormItem, FormMessage } from "@/components/ui/Form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
-import timezones from "@/constants/Timezones";
-import type { IForm } from "@/types/base";
-import { ClockIcon } from "@radix-ui/react-icons";
-import SelectedValue from "../../SelectedValue";
-import FormMyDetailsRowContent from "../FormMyDetailsRowContent";
+import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/Form';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/Select';
+import timezones from '@/constants/Timezones';
+import type { IForm } from '@/types/base';
+import { ClockIcon } from '@radix-ui/react-icons';
+import SelectedValue from '../../SelectedValue';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function TimezoneSection({ form }: IForm) {
 	return (

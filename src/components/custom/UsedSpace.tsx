@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useUserContext } from "@/context/UserProvider";
-import { Card, CardContent } from "../ui/Card";
-import { Progress } from "../ui/Progress";
+import { useUserContext } from '@/context/UserProvider';
+import { Card, CardContent } from '../ui/Card';
+import { Progress } from '../ui/Progress';
 
 export default function UsedSpace() {
 	const { user } = useUserContext();

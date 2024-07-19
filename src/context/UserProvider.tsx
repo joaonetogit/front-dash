@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import type { IChildren, IUser } from "@/types/base";
-import type { IUserContextProps } from "@/types/context/User";
-import { createContext, useContext, useMemo, useState } from "react";
+import type { IChildren, IUser } from '@/types/base';
+import type { IUserContextProps } from '@/types/context/User';
+import { createContext, useContext, useMemo, useState } from 'react';
 
 const UserContext = createContext<IUserContextProps>({
 	user: null,
@@ -10,9 +10,9 @@ const UserContext = createContext<IUserContextProps>({
 
 export function UserProvider({ children }: IChildren) {
 	const [user] = useState<IUser | null>({
-		image: "/avatar.jpg",
-		name: "Olivia Rhye",
-		email: "olivia@untitledui.com",
+		image: '/avatar.jpg',
+		name: 'Olivia Rhye',
+		email: 'olivia@untitledui.com',
 		percentStorageUsed: 80,
 	});
 

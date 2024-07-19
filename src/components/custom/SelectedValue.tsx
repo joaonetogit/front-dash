@@ -1,4 +1,4 @@
-import type { ISelectedValue } from "@/types/components/SelectedValue";
+import type { ISelectedValue } from '@/types/components/SelectedValue';
 
 export default function SelectedValue({ archive }: ISelectedValue) {
 	const isArray = Array.isArray(archive);

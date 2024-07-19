@@ -1,4 +1,4 @@
-import ContentPage from "@/components/custom/ContentPage";
+import ContentPage from '@/components/custom/ContentPage';
 
 export default function HomePage() {
 	return (

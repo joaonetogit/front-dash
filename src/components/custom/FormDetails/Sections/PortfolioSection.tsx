@@ -1,7 +1,7 @@
-import archives from "@/constants/ArchivesToUpload";
-import CardUploadArchive from "../../CardUploadArchive";
-import DragDropFiles from "../../DragDropFiles";
-import FormMyDetailsRowContent from "../FormMyDetailsRowContent";
+import archives from '@/constants/ArchivesToUpload';
+import CardUploadArchive from '../../CardUploadArchive';
+import DragDropFiles from '../../DragDropFiles';
+import FormMyDetailsRowContent from '../FormMyDetailsRowContent';
 
 export default function PortfolioSection() {
 	return (

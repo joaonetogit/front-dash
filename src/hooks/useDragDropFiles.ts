@@ -1,7 +1,7 @@
-import type { IDragDropFiles } from "@/types/components/DragDropFiles";
-import { type ChangeEvent, useCallback } from "react";
+import type { IDragDropFiles } from '@/types/components/DragDropFiles';
+import { type ChangeEvent, useCallback } from 'react';
 
-export default function useDragDropFiles(onFileSelect: IDragDropFiles["onFileSelect"]) {
+export default function useDragDropFiles(onFileSelect: IDragDropFiles['onFileSelect']) {
 	const handleFileChange = useCallback(
 		(event: ChangeEvent<HTMLInputElement>) => {
 			const { files } = event.target;
